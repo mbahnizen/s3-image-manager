@@ -1,4 +1,6 @@
 .env
 .env.*
 !\.env.example
-data\image_manager.sqlite
+data/image_manager.sqlite
+data/*.sqlite
+data/*.sqlite*

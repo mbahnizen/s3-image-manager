@@ -10,6 +10,26 @@ Nizen Image Manager is a lightweight PHP app for uploading, organizing, and mana
 - SQLite storage with simple backup/restore scripts.
 - UI optimized for bulk upload, clipboard paste, and quick metadata editing.
 
+## Purpose
+This project was built to give content creators a simple uploader (lighter than full S3 clients) that generates public URLs and helps manage alt text and captions while uploading. It is especially useful for technical writers and web developers who store assets outside their main server.
+
+**Key advantages**
+- Bulk upload with per-image alt text and caption editing.
+- Easy renaming for clean, consistent filenames.
+- Ready-to-copy snippets for fast publishing.
+
+**Non-goals**
+- Not a full digital asset management (DAM) platform.
+- No multi-user roles or advanced permissions.
+- No in-browser image editing or transformations.
+
+## How to Use
+1. Open the app in your browser and log in with `ADMIN_PASSWORD`.
+2. Create a workspace to group assets by article or topic.
+3. Upload images via drag-and-drop, file picker, or clipboard paste.
+4. Edit filename, alt text, and caption before or after upload.
+5. Copy the generated URL or snippet and paste into your article.
+
 ## Architecture
 - **Backend**: PHP + SQLite (`data/image_manager.sqlite`).
 - **Storage**: S3-compatible object storage (public-read by default).
