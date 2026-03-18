@@ -1,0 +1,21 @@
+<svg viewBox="0 0 512 512" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="center-clip">
+      <rect x="116" y="96" width="280" height="320" rx="32" />
+    </clipPath>
+  </defs>
+  
+  <rect x="116" y="96" width="280" height="320" rx="32" fill="#0f766e" stroke="#ffffff" stroke-width="32" stroke-linejoin="round" transform="rotate(-15 256 256)" />
+  
+  <rect x="116" y="96" width="280" height="320" rx="32" fill="#0f766e" stroke="#ffffff" stroke-width="32" stroke-linejoin="round" transform="rotate(15 256 256)" />
+  
+  <rect x="116" y="96" width="280" height="320" rx="32" fill="#ffffff" />
+  
+  <g clip-path="url(#center-clip)">
+    <circle cx="306" cy="186" r="44" fill="#f97316" />
+    <polygon points="76,430 216,230 416,430" fill="#0f766e" />
+    <polygon points="216,230 296,310 250,330 216,305 190,325 160,310" fill="#ffffff" />
+  </g>
+  
+  <rect x="116" y="96" width="280" height="320" rx="32" fill="none" stroke="#ffffff" stroke-width="32" stroke-linejoin="round" />
+</svg>
