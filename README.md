@@ -2,6 +2,21 @@
 
 Nizen Image Manager is a lightweight PHP app for uploading, organizing, and managing images in S3-compatible storage. It provides a single-admin UI for workspaces, metadata (alt/caption), and stable public URLs for use in articles.
 
+## Screenshots
+Light and dark mode previews (stored in `docs/`):
+
+**Upload**
+![Upload Light](docs/upload-light.png)
+![Upload Dark](docs/upload-dark.png)
+
+**Gallery**
+![Gallery Light](docs/gallery-light.png)
+![Gallery Dark](docs/gallery-dark.png)
+
+**Workspaces**
+![Workspaces Light](docs/workspace-light.png)
+![Workspaces Dark](docs/workspace-dark.png)
+
 **Highlights**
 - Admin login with session hardening and CSRF protection.
 - Workspace-based organization with rename/delete workflows.
@@ -210,21 +225,6 @@ See `ops/backup_restore.md` for scripted backup and restore instructions.
 - Rotate `S3_ACCESS_KEY`, `S3_SECRET_KEY`, and `ADMIN_PASSWORD` before publishing.
 - If `data/image_manager.sqlite` contains production data, remove it from git history.
 - Keep backups of the database and enable bucket versioning if possible.
-
-## Screenshots
-Light and dark mode previews (stored in `docs/`):
-
-**Upload**
-- Light: `docs/upload-light.png`
-- Dark: `docs/upload-dark.png`
-
-**Gallery**
-- Light: `docs/gallery-light.png`
-- Dark: `docs/gallery-dark.png`
-
-**Workspaces**
-- Light: `docs/workspace-light.png`
-- Dark: `docs/workspace-dark.png`
 
 ## Troubleshooting
 - **401 Unauthorized**: Login expired or CSRF missing. Re-login and retry.
